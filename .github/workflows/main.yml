@@ -18,7 +18,7 @@ on:
         options:
           - 'LineageOS 20.0'
           - 'LineageOS 21.0'
-          - 'CiperOS 14.0'
+          - 'CipherOS 14.0'
           - 'ArrowOS 13.1'
           - 'DerpFest 13.0'
       BUILD_DIFFERENT_ROM:
@@ -150,7 +150,7 @@ jobs:
           "LineageOS 21.0")
             repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs --depth=1
           ;;
-          "CiperOS 14.0")
+          "CipherOS 14.0")
             repo init -u https://github.com/CipherOS/android_manifest.git -b fourteen --depth=1
           ;;
           "LineageOS 20.0")
