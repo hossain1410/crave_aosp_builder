@@ -290,7 +290,7 @@ jobs:
     - name: Retrive build artifact(s)
       run: |
         cd $PROJECTFOLDER
-        crave ssh -- sleep 1
+        crave ssh -- sleep 10
         crave pull out/target/product/*/*.zip
         crave pull out/target/product/*/*.img
 
