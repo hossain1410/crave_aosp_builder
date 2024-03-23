@@ -291,8 +291,8 @@ jobs:
       run: |
         cd $PROJECTFOLDER
         crave ssh -- sleep 10
-        crave pull out/target/product/*/*.zip
-        crave pull out/target/product/*/*.img
+        crave pull out/target/product/X00TD/*.zip
+        crave pull out/target/product/X00TD/*.img
 
       # Directly upload to releases.
     - name: Upload to repository's releases page
