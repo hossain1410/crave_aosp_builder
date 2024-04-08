@@ -275,6 +275,8 @@ jobs:
         # Set up build environment
         export BUILD_USERNAME=${{ github.actor }} ; \
         export BUILD_HOSTNAME=crave ; \
+        export BUILD_TYPE=OFFICIAL ; \
+        export CHERISH_MAINTAINER=EUREKATEAM ; \
         source build/envsetup.sh && \
 
         # Build the ROM
