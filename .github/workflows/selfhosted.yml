@@ -36,7 +36,6 @@ on:
         description: "Personal local manifest's branch:"
         required: false
         default: 'lineage-oxygen'
-      DEVICE_NAME:
       
       CLEAN_BUILD:
         description: 'Build with a clean workspace?'
