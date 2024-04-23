@@ -338,15 +338,15 @@ jobs:
         # Build the ROM
         make installclean && \
         lunch aosp_a20-ap1a-userdebug && \
-        mka bacon && \
+        make bacon && \
         lunch aosp_a20e-ap1a-userdebug && \
-        mka bacon && \
+        make bacon && \
         lunch aosp_a30-ap1a-userdebug && \
-        mka bacon && \
+        make bacon && \
         lunch aosp_a30s-ap1a-userdebug && \
-        mka bacon && \
+        make bacon && \
         lunch aosp_a40-ap1a-userdebug && \
-        mka bacon"
+        make bacon"
       timeout-minutes: 1440
 
       # Send Build 'status' notification
