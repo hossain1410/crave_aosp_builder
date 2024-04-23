@@ -355,10 +355,18 @@ jobs:
         echo "Run ID: ${{ github.run_id }}"; \
 
         # Build the ROM
-        lunch ${{ github.event.inputs.PRODUCT_NAME }}-${{ github.event.inputs.BUILD_TYPE }} && \
         make installclean && \
-        ${{ github.event.inputs.BUILD_COMMAND }}"
-      timeout-minutes: 720
+        lunch aosp_a20-ap1a-userdebug && \
+        mka bacon && \
+        lunch aosp_a20e-ap1a-userdebug && \
+        mka bacon && \
+        lunch aosp_a30-ap1a-userdebug && \
+        mka bacon && \
+        lunch aosp_a30s-ap1a-userdebug && \
+        mka bacon && \
+        lunch aosp_a40-ap1a-userdebug && \
+        mka bacon"
+      timeout-minutes: 1440
 
       # Send Build 'status' notification
     - name: Telegram Notification
